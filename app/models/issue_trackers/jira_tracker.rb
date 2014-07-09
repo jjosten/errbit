@@ -87,7 +87,6 @@ if defined? JIRA
 
       issue_build = client.Issue.build
       issue_build.save(issue)
-      issue_build.fetch
 
       problem.update_attributes(
           :issue_link => "#{base_url}#{context_path}browse/#{issue_build.key}",
