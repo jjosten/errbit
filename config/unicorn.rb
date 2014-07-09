@@ -1,5 +1,12 @@
 # http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/
 
+stderr_path "/var/log/unicorn/unicorn_errbit.log"
+stdout_path "/var/log/unicorn/unicorn_errbit.log"
+
+listen "/var/run/unicorn/unicorn_errbit.sock"
+
+pid "/home/ojajip/errbit/shared/pids/unicorn.pid"
+
 worker_processes 3 # amount of unicorn workers to spin up
 timeout 30         # restarts workers that hang for 30 seconds
 preload_app true

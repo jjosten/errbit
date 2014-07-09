@@ -291,6 +291,8 @@ GEM
     rushover (0.3.0)
       json
       rest-client
+    rvm-capistrano (1.5.1)
+      capistrano (~> 2.15.4)
     safe_yaml (0.9.7)
     sawyer (0.5.3)
       addressable (~> 2.3.5)
@@ -402,6 +404,7 @@ DEPENDENCIES
   rspec-rails
   ruby-fogbugz
   rushover
+  rvm-capistrano
   strong_parameters
   therubyracer
   timecop
